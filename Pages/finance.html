@@ -2,62 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprehensive Financial Accounting Form</title>
+    <title>Car Purchase and Financial Information</title>
 </head>
-<body>
-    <h1>Comprehensive Financial Accounting Form</h1>
-    <form action="/submit-financial-data" method="POST" enctype="multipart/form-data">
-        <!-- Personal Information -->
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="contact">Contact Number:</label><br>
-            <input type="text" id="contact" name="contact" required><br><br>
-            <label for="address">Address:</label><br>
-            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
-        </fieldset>
+<body background="/images/ba.jpg">
+    <a href="./../index.html">Home Page</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="buy_car.html">Buy Car</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="sell_car.html">Sell Car</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="pre_owned_car.html">Pre-owned Cars</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="about.html"><b>About Us</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="finance.html">finance dipartment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="contact.html">Contact Us</a>
+    <table align="center" bgcolor="white" border="0" cellpadding="10" cellspacing="10" width="600">
+        <tr>
+            <td colspan="2">
+                <h1 align="center">Car Purchase and Financial Information</h1>
+                <img src="/images/banking.jpg" alt="Car Finance Image" width="100%"height="90%">
+                <p align="center">
+                    Car Finance
+                    Car finance involves borrowing money to purchase a car. The loan amount, interest rate, loan term, down payment, and annual percentage rate (APR) are all crucial factors to consider.
+                    Accounting Policy
+                    Accounting policies are the principles and methods a company uses to record, classify, summarize, and report financial transactions. They ensure consistency and transparency in financial reporting. Examples include depreciation methods and revenue recognition methods.
+                    Information and Conditions
+                    To obtain car finance, lenders typically require information such as your credit score, vehicle details, and down payment amount. Loan approval often hinges on factors like your credit score and debt-to-income ratio.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr width="900">
+                <h2>Buyer's Personal Details</h2>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
 
-        <!-- Financial Information -->
-        <fieldset>
-            <legend>Financial Information</legend>
-            <label for="account_number">Account Number:</label><br>
-            <input type="text" id="account_number" name="account_number" required><br><br>
-            <label for="bank_name">Bank Name:</label><br>
-            <input type="text" id="bank_name" name="bank_name" required><br><br>
-            <label for="transaction_date">Transaction Date:</label><br>
-            <input type="date" id="transaction_date" name="transaction_date" required><br><br>
-            <label for="transaction_amount">Transaction Amount:</label><br>
-            <input type="number" id="transaction_amount" name="transaction_amount" required><br><br>
-            <label for="transaction_type">Transaction Type:</label><br>
-            <select id="transaction_type" name="transaction_type" required>
-                <option value="credit">Credit</option>
-                <option value="debit">Debit</option>
-            </select><br><br>
-            <label for="description">Description:</label><br>
-            <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
-        </fieldset>
+                    <label for="contact">Contact Number:</label><br>
+                    <input type="text" id="contact" name="contact"><br><br>
 
-        <!-- Additional Pictures -->
-        <fieldset>
-            <legend>Additional Pictures</legend>
-            <label for="photo1">Upload Photo 1:</label><br>
-            <input type="file" id="photo1" name="photo1" accept="image/*"><br><br>
-            <label for="photo2">Upload Photo 2:</label><br>
-            <input type="file" id="photo2" name="photo2" accept="image/*"><br><br>
-            <label for="photo3">Upload Photo 3:</label><br>
-            <input type="file" id="photo3" name="photo3" accept="image/*"><br><br>
-        </fieldset>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr width="900">
+                <h2>Car Details</h2>
+                <form>
+                    <label for="make">Car Make:</label><br>
+                    <input type="text" id="make" name="make"><br><br>
 
-        <!-- Additional Messages -->
-        <fieldset>
-            <legend>Additional Messages</legend>
-            <label for="message1">Message 1:</label><br>
-            <textarea id="message1" name="message1" rows="4" cols="50"></textarea><br><br>
-            <label for="message2">Message 2:</label><br>
-            <textarea id="message2" name="message2" rows="4" cols="50"></textarea><br><br>
-            <label for="message3">Message 3:</label><br>
-            <textarea id="message3"
+                    <label for="model">Car Model:</label><br>
+                    <input type="text" id="model" name="model"><br><br>
+
+                    <label for="year">Year:</label><br>
+                    <input type="text" id="year" name="year"><br><br>
+
+                    <label for="color">Color:</label><br>
+                    <input type="text" id="color" name="color"><br><br>
+
+                    <label for="price">Price:</label><br>
+                    <input type="text" id="price" name="price"><br><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr width="900">
+                <h2>Financing Options</h2>
+                <form>
+                    <label for="loan">Loan Amount:</label><br>
+                    <input type="text" id="loan" name="loan"><br><br>
+
+                    <label for="rate">Interest Rate:</label><br>
+                    <input type="text" id="rate" name="rate"><br><br>
+
+                    <label for="duration">Loan Duration (years):</label><br>
+                    <input type="text" id="duration" name="duration"><br><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr width="900">
+                <h2>Additional Information</h2>
+                <form>
+                    <label for="dealer">Dealer Name:</label><br>
+                    <input type="text" id="dealer" name="dealer"><br><br>
+
+                    <label for="location">Dealer Location:</label><br>
+                    <input type="text" id="location" name="location"><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr width="900">
+                <h2>Financial Information and Banking Details</h2>
+                <h3>Bank Account Details</h3>
+                <table border="1">
+                    <tr>
+                        <th>Bank Name</th>
+                        <th>Account Number</th>
+                        <th>Account Holder</th>
+                        <th>IFSC Code</th>
+                    </tr>
+                    <tr>
+                        <td>Bank of XYZ</td>
+                        <td>1234567890</td>
+                        <td>John Doe</td>
+                        <td>XYZB0001234</td>
+                    </tr>
+                    <tr>
+                        <td>ABC Bank</td>
+                        <td>0987654321</td>
+                        <td>Jane Smith</td>
+                        <td>ABCB0005678</td>
+                    </tr>
+                </table>
+                <hr width="900">
+                <h3>Credit Card Information</h3>
+                <table border="1">
+                    <tr>
+                        <th>Card Provider</th>
+                        <th>Card Number</th>
+                        <th>Card Holder</th>
+                        <th>Expiration Date</th>
+                    </tr>
+                    <tr>
+                        <td>Visa</td>
+                        <td>4111 1111 1111 1111</td>
+                        <td>John Doe</td>
+                        <td>12/24</td>
+                    </tr>
+                    <tr>
+                        <td>MasterCard</td>
+                        <td>5500 0000 0000 0004</td>
+                        <td>Jane Smith</td>
+                        <td>11/23</td>
+                    </tr>
+                </table>
+                <hr width="900">
+                <h3>Loan Information</h3>
+                <table border="1">
+                    <tr>
+                        <th>Loan Type</th>
+                        <th>Loan Amount</th>
+                        <th>Interest Rate</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>Home Loan</td>
+                        <td>$200,000</td>
+                        <td>3.5%</td>
+                        <td>30 years</td>
+                    </tr>
+                    <tr>
+                        <td>Car Loan</td>
+                        <td>$25,000</td>
+                        <td>4.0%</td>
+                        <td>5 years</td>
+                    </tr>
+                </table>
+                <hr width="900">
+                <h3>Investment Information</h3>
+                <table border="1">
+                    <tr>
+                        <th>Investment Type</th>
+                        <th>Amount Invested</th>
+                        <th>Current Value</th>
+                        <th>Return Rate</th>
+                    </tr>
+                    <tr>
+                        <td>Stocks</td>
+                        <td>$10,000</td>
+                        <td>$15,000</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td>Mutual Funds</td>
+                        <td>$5,000</td>
+                        <td>$6,500</td>
+                        <td>30%</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
